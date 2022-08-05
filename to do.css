@@ -1,0 +1,164 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-image: linear-gradient(120deg, #f6d365, #d88771);
+    color: rgb(34, 7, 7);
+    
+}
+
+
+.project-heading{
+    margin-top: 50px;
+}
+
+.project-cont{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-cont{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#input{
+    /* border: 2px solid black; */
+    width: 70%;
+
+}
+
+button{
+    border: 2px solid black;
+    color: white;
+    width: 80px;
+    padding: 5px;
+    text-transform: capitalize;
+    background-color: rgb(110, 128, 230);
+}
+
+button:hover{
+    background-color: rgb(142, 222, 135);
+    width: 82px;
+
+}
+
+li{
+    border: 1px solid rgb(13, 2, 15);
+    list-style: none;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    margin: 2px;
+    padding: 5px;
+
+}
+
+.task-list{
+    margin-top: 25px;
+    width: 80%;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+
+}
+
+.new-task{
+    width: 99%;
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 5px; */
+}
+
+.paragraph-styling{
+    border: 1px solid rgb(13, 2, 15);
+    margin: 2px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* 
+.icons{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.task-icons{
+    padding: 2px;
+    width: 20px;
+    height: 20px;
+} */
+
+.err-msg{
+    background-color: rgb(245, 65, 45);
+    margin-top: 5px;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+
+ /* iPADS, TABLETS */
+ @media only screen and (max-width: 768px) {
+     
+.project-cont{
+    width: 70%;
+}
+
+.task-list{
+    width: 85%;
+}
+
+.err-msg{
+    width: 70%;
+}
+
+} 
+
+/* MOBILE PHONE POTRAIT */
+@media only screen and (max-width: 480px) { 
+    
+.project-heading{
+    margin-top: 40px;
+}
+
+.project-cont{
+    width: 90%;
+}
+
+.task-list{
+    margin-top: 25px;
+    width: 98%;
+}
+
+.paragraph-styling{
+    padding: 2px;
+}
+
+.err-msg{
+    font-size: 15px;
+}
+
+
+}
+
+
